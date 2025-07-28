@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  background: #111;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo span {
+  color: red;
+}
+
+.nav a {
+  margin: 0 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav .signin {
+  background: red;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: white;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.participants,
+.motorcycles,
+.contact {
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.motorcycle-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.motorcycle {
+  background: #eee;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.motorcycle img {
+  width: 100%;
+  height: auto;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .btn {
+  margin-top: 1rem;
+}
