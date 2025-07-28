@@ -30,22 +30,18 @@ body {
   text-decoration: none;
 }
 
-.nav .signin {
-  background: red;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-}
-
 .hero {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
-  background: white;
+  background: url(images/bike-hero.png) no-repeat center center/cover
+;
 }
 
 .hero-text {
   flex: 1;
   min-width: 280px;
+  color: white;
 }
 
 .hero-image {
@@ -95,20 +91,6 @@ body {
   height: auto;
 }
 
-.contact form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: auto;
-}
-
-.contact input,
-.contact textarea {
-  margin: 0.5rem 0;
-  padding: 0.7rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
 
 footer {
   background: #111;
