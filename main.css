@@ -5,6 +5,7 @@
 }
 .background-bike-hero{
   background: url(images/bike-hero.webp) no-repeat center;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,6 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #1111119a;
 }
 
 .logo span {
@@ -103,4 +105,10 @@ footer {
 
 footer .btn {
   margin-top: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .background-bike-hero{
+    height: 65vh;
+  }
+  
 }
