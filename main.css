@@ -103,8 +103,15 @@ footer {
   text-align: center;
 }
 
-footer .btn {
-  margin-top: 1rem;
+footer h4 {
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .background-bike-hero{
