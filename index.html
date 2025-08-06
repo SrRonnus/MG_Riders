@@ -3,19 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MG Riders</title>
+  <title>MG Riders | Tienda de Repuestos de Moto en Latinoamérica</title>
+  <meta name="description" content="MG Riders: Tienda especializada en repuestos de moto. Encuentra todo lo que necesitas para tu motocicleta, desde piezas pequeñas hasta las más difíciles de conseguir.">
+  <meta name="keywords" content="MG Riders, repuestos de moto, tienda de motos, accesorios de motocicleta, partes de moto, motocicletas, comprar repuestos moto, Latinoamérica">
+  <meta name="author" content="MG Riders">
+  <meta property="og:title" content="MG Riders | Tienda de Repuestos de Moto en Latinoamérica">
+  <meta property="og:description" content="Encuentra los mejores repuestos y accesorios para tu moto en MG Riders. Calidad y variedad para todos los motociclistas.">
+  <meta property="og:image" content="images/Logo-MGRaiders.png">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://mgriders.com/">
   <link rel="stylesheet" href="main.css"/>
   <link rel="icon" type="image/x-icon" href="images/Logo-MGRaiders.png">
+
 </head>
 <body>
   <div class="background-bike-hero">
     <header class="header">
       <div class="logo">MG<span>Riders</span></div>
-      <nav class="nav">
-
-        <a href="#">Contactos</a>
-        <a href="#">Sobre Nosotros</a>
-
+      <nav class="nav" aria-label="Menú principal">
+        <div class="dropdown" id="menuDropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown()">=</button>
+          <div class="dropdown-content">
+            <a href="#contacto">Contactos</a>
+            <a href="#sobre-nosotros">Sobre Nosotros</a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -23,8 +35,8 @@
       <div class="hero-text">
         <h1>MG Riders</h1>
         <p>Tienda de todo tipo de repuestos de moto, 
-        desde lo mas pequeño hasta lo que no encuentras en otras tiendas</p>
-        <a href="#" class="btn">Conoce nuestros productos</a>
+        desde lo más pequeño hasta lo que no encuentras en otras tiendas.</p>
+        <a href="#productos" class="btn">Conoce nuestros productos</a>
       </div>
     </section>
   </div>
@@ -32,32 +44,33 @@
   <section class="participants">
     <h2>5 Participantes</h2>
     <p>En tres semanas seleccionaremos a los participantes del proyecto. ¡Puedes registrarte o votar!</p>
-    <a href="#" class="btn register-btn">Registrarse</a>
+    <a href="#registro" class="btn register-btn">Registrarse</a>
   </section>
 
-  <section class="motorcycles">
+  <section class="motorcycles" id="productos">
     <h2>Elige Tu Motocicleta</h2>
     <div class="motorcycle-list">
       <div class="motorcycle">
-        <img src="images/300nk.png" alt="300NK" />
+        <img src="images/300nk.png" alt="Motocicleta modelo 300NK" />
         <h3>300NK</h3>
-        <p>La ligera 300NK es una moto ideal y ágil...</p>
-        <a href="#" class="btn">Descubre más</a>
+        <p>La ligera 300NK es una moto ideal y ágil para ciudad y carretera.</p>
+        <a href="#300nk" class="btn">Descubre más</a>
       </div>
       <!-- Puedes duplicar este bloque para más motos -->
     </div>
   </section>
 
   <footer>
-    <h4>Siguenos en nuestras redes sociales:</h4>
+    <h4>Síguenos en nuestras redes sociales:</h4>
     <div class="socials">
-      <a href="#">YouTube</a> 
-      <a href="#">Facebook</a> 
-      <a href="#">Twitter</a> 
-      <a href="#">Tik Tok</a>
+      <a href="https://youtube.com/" target="_blank" rel="noopener">YouTube</a> 
+      <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a> 
+      <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a> 
+      <a href="https://tiktok.com/" target="_blank" rel="noopener">Tik Tok</a>
     </div>
     <p>&copy; 2025 MG Riders. Todos los derechos reservados.</p>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
 <!--por si tienen licencias algunas web dejamos este comentario aclarando que utilizamos imagenes desde:
