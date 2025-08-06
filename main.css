@@ -30,7 +30,10 @@ body {
   align-items: center;
   background-color: #1111119a;
 }
-
+.logo{
+  font-size: 1.1rem;
+  font-weight: semi-bold;
+}
 .logo span {
   color: red;
 }
@@ -162,13 +165,12 @@ footer h4 {
   color: white;
   font-size: 1rem;
   cursor: pointer;
-  padding: 0.5rem 1rem;
   border-radius: 4px;
 }
 
 .dropdown-btn:hover {
   color: red;
-  font-size: 120%;
+  font-size: 1.2rem;
   transition-duration: 0.2s;
 }
 
