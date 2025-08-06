@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .background-bike-hero{
   background: url(images/bike-hero.webp) no-repeat center;
   height: 100vh;
@@ -94,8 +98,25 @@ body {
   width: 100%;
   height: auto;
 }
+.boton-wa {
+  text-align: center;
+  margin: 2rem 0;
+  background: #25D366;
+  padding: 1rem;
+  border-radius: 40px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
 
-
+.boton-wa:hover {
+  background: #128C7E;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.3s;
+}
 footer {
   background: #111;
   color: white;
@@ -112,6 +133,15 @@ footer h4 {
   justify-content: center;
   gap: 1rem;
   color: white;
+}
+.socials:hover {
+  color: red;
+  transition-duration: 0.3s;
+  font-size: 105%;
+}
+.fab.fa-whatsapp {
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 @media screen and (max-width: 768px) {
   .background-bike-hero{
@@ -133,6 +163,13 @@ footer h4 {
   font-size: 1rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.dropdown-btn:hover {
+  color: red;
+  font-size: 120%;
+  transition-duration: 0.2s;
 }
 
 .dropdown-content {
@@ -164,12 +201,4 @@ footer h4 {
 .dropdown.show .dropdown-content {
   display: block;
   opacity: 1;
-}
-
-/* Responsive: el menú sigue alineado a la derecha en móviles */
-@media screen and (max-width: 768px) {
-  .dropdown-content {
-    right: 0;
-    left: auto;
-  }
 }
