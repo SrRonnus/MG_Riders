@@ -11,9 +11,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 2rem;
-  background: rgba(34, 3, 3, 0.164);
-  border-bottom: 2px solid #b30000;
+  padding: 0rem 1.2rem;
+  border-bottom: 1px solid #b30000;
 }
 .n {
   text-align: left;
@@ -111,7 +110,7 @@ body {
   background: red;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .volver:hover {
@@ -131,7 +130,6 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0rem 1rem;
-  background: rgba(34, 3, 3, 0.164);
   border-bottom: 1px solid #b30000;
   }
 }
