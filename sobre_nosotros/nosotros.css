@@ -1,3 +1,109 @@
+body {
+  background: linear-gradient(135deg, #111 60%, #b30000 100%);
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+  background: rgba(34, 3, 3, 0.164);
+  border-bottom: 2px solid #b30000;
+}
+.n {
+  text-align: left;
+  margin: 1rem;
+}
+
+.mision_vision {
+  background: rgba(20, 20, 20, 0.92);
+  border-left: 8px solid #b30000;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 700px;
+  padding: 2rem 2.5rem 2rem 2rem;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.mision_vision:hover {
+  transform: scale(1.025);
+  box-shadow: 0 12px 36px 0 rgba(179,0,0,0.25);
+}
+
+.mision_vision h2 {
+  color: #b30000;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 8px #000;
+  position: relative;
+}
+
+.mision_vision h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #b30000 60%, #fff 100%);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.mision_vision p {
+  font-size: 1.18rem;
+  line-height: 1.7;
+  color: #eee;
+  margin: 0;
+  text-shadow: 0 1px 8px #0008;
+}
+
+.valores {
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 700px;
+  padding: 2rem 2.5rem 2rem 2rem;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+}
+
+.valores h2 {
+  color: #b30000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.valores ul {
+  list-style: none;
+  padding: 0;
+}
+
+.valores li {
+  margin-bottom: 1.1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1.08rem;
+  color: #fff;
+}
+
+.valores li::before {
+  content: "★";
+  color: #b30000;
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+  top: 0.1rem;
+}
+
 .volver {
   display: inline-block;
   margin: 1rem 0;
@@ -10,4 +116,22 @@
 
 .volver:hover {
   background: darkred;
+}
+
+@media (max-width: 600px) {
+  .mision_vision, .valores {
+    padding: 1.1rem 0.7rem 1.1rem 0.7rem;
+    max-width: 97vw;
+  }
+  .mision_vision h2, .valores h2 {
+    font-size: 1.2rem;
+  }
+  .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0rem 1rem;
+  background: rgba(34, 3, 3, 0.164);
+  border-bottom: 1px solid #b30000;
+  }
 }
