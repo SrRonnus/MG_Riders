@@ -120,16 +120,27 @@ body {
 @media (max-width: 600px) {
   .mision_vision, .valores {
     padding: 1.1rem 0.7rem 1.1rem 0.7rem;
-    max-width: 97vw;
+    max-width: 340px;           /* Limita el ancho máximo en móvil */
+    margin-left: auto;          /* Centra horizontalmente */
+    margin-right: auto;         /* Centra horizontalmente */
+    width: 90vw;                /* No ocupa todo el ancho */
+    box-sizing: border-box;
   }
   .mision_vision h2, .valores h2 {
     font-size: 1.2rem;
   }
   .header{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0rem 1rem;
-  border-bottom: 1px solid #b30000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Cambiado de flex-start a center para centrar verticalmente */
+    padding: 0rem 1rem;
+    border-bottom: 1px solid #b30000;
+  }
+
+  .header h3 {
+    margin: 0;
+    padding: 0.7rem 0 0.7rem 0; /* Añade padding arriba y abajo para centrar mejor */
+    font-size: 1rem;
+    line-height: 1.2;
   }
 }

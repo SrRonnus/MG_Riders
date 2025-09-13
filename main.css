@@ -16,9 +16,11 @@ a {
   
 }
 body {
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
-  background: #f4f4f4;
-  color: #333;
   line-height: 1.6;
 }
 
@@ -58,13 +60,6 @@ body {
   color: white;
 }
 
-.hero-image {
-  flex: 1;
-  text-align: center;
-}
-
-
-
 .btn {
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -75,32 +70,6 @@ body {
   border-radius: 4px;
 }
 
-.participants,
-.motorcycles,
-.contact {
-  padding: 2rem;
-  background: #fff;
-  text-align: center;
-}
-
-.motorcycle-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.motorcycle {
-  background: #eee;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 8px;
-  width: 250px;
-}
-
-.motorcycle img {
-  width: 100%;
-  height: auto;
-}
 .boton-wa {
   text-align: center;
   margin: 2rem 0;
@@ -150,7 +119,6 @@ footer h4 {
   .background-bike-hero{
     height: 65vh;
   }
-  
 }
 
 /* Menú desplegable para el header */
@@ -179,13 +147,12 @@ footer h4 {
   display: none;
   position: absolute;
   top: 100%;
-  right: 0; /* Cambiado de left: 0 a right: 0 para alinear a la derecha */
+  right: 0;
   background-color: #222222d2;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 4px;
-  /* Opcional: animación suave */
   transition: opacity 0.2s;
 }
 
