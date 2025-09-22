@@ -1,0 +1,52 @@
+
+/* UBICACIÓN */
+.ubicacion {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.ubicacion h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.map-container {
+  margin: 0 auto 1rem;
+  max-width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.direccion {
+  font-size: 1rem;
+  color: #ffffff9c;
+}
+
+/* ENVÍOS */
+.envios {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+.envios h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.envios ul {
+  list-style: disc;
+  margin: 1rem 0 2rem;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+.btn-whatsapp {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.btn-whatsapp:hover {
+  background: #c92f3d;
+}
