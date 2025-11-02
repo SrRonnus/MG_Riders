@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contactos | MG Riders</title>
-    <link rel="stylesheet" href="../general.css">
-    <link rel="stylesheet" href="contactos.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../general.css" />
+    <link rel="stylesheet" href="contactos.css" />
+  </head>
+  <body>
     <header class="header">
-        <a href="../index.html" class="volver">Volver</a>
-        <h3>MG Riders | Contactos</h3>
+      <a href="../index.html" class="volver">Volver</a>
+      <h3>MG Riders | Contactos</h3>
     </header>
-</body>
+
+    <!--EmailJS SDK-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <section class="container">
+      <div class="text-section">
+        <h2>Póngase en contacto</h2>
+        <p>
+          Complete el formulario y recibirá respuesta a su correo lo antes
+          posible.
+        </p>
+      </div>
+
+      <form id="contactForm">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo electrónico"
+          required
+        />
+        <textarea
+          name="mensaje"
+          placeholder="Mensaje"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">ENVIAR</button>
+      </form>
+    </section>
+
+    
+
+    <script src="contactos.js"></script>
+  </body>
 </html>
