@@ -4,11 +4,24 @@ header {
   align-items: center;
   padding: 20px 60px;
   border-bottom: 2px solid #b30000;
+  gap: 1rem;
+}
+body {
+  background-image: url(/images/fondo_form.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 header h1 {
   font-size: 1.8em;
   letter-spacing: 1px;
+}
+
+/* Asegurar que el título del header se centre verticalmente */
+header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.2;
 }
 
 nav a {
@@ -25,15 +38,20 @@ nav a:hover {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* centrar horizontalmente los bloques */
   align-items: flex-start;
   padding: 80px 60px;
   flex-wrap: wrap;
   gap: 40px;
+  max-width: 1100px; /* limitar ancho para centrar mejor en pantallas grandes */
+  margin: 0 auto;
+  box-sizing: border-box; /* añadido para que padding no desplace elementos */
 }
 
+/* Texto a la izquierda en desktop, pero responsivo */
 .text-section {
-  max-width: 500px;
+  max-width: 600px;
+  flex: 1 1 480px;
 }
 
 .text-section h2 {
@@ -46,16 +64,26 @@ nav a:hover {
   color: #ccc;
   line-height: 1.6;
 }
+label {
+  display: block;
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
 
+/* Contenedor centrado y con columna fija para formulario */
 form {
-  background-color: #1a1a1a;
+  backdrop-filter: blur(100px);
   padding: 30px;
   border-radius: 12px;
   width: 100%;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+  max-width: 420px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.384);
+  margin: 0 auto; /* centra en todas las pantallas */
+  box-sizing: border-box; /* asegurar que padding no aumente ancho */
 }
 
+/* Inputs y textarea mantienen tamaño del formulario */
 form input,
 form textarea {
   width: 100%;
@@ -63,15 +91,17 @@ form textarea {
   border: 1px solid #333;
   border-radius: 8px;
   padding: 12px;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0; /* quitar margen lateral que podía desplazar */
   color: #fff;
   font-size: 1em;
+  box-sizing: border-box; /* imprescindible para que 100% se comporte */
 }
 
 form input:focus,
 form textarea:focus {
   border-color: #b30000;
   outline: none;
+  transition: border-color 0.3s;
 }
 
 form button {
@@ -91,6 +121,7 @@ form button:hover {
   background-color: #ff1a1a;
 }
 
+/* Footer centrado en móviles */
 footer {
   background-color: #b30000;
   display: flex;
@@ -119,4 +150,56 @@ footer {
 
 .socials a:hover {
   opacity: 0.7;
+}
+
+/* Responsive: móviles y tablets */
+@media (max-width: 768px) {
+  header {
+    padding: 12px 18px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center; /* centrar los bloques verticalmente */
+    padding: 28px 18px; /* reducir padding lateral para evitar desplazamiento */
+    gap: 20px;
+  }
+
+  .text-section {
+    max-width: 520px;
+    width: 100%;
+    text-align: center; /* centrar texto en móvil */
+    padding: 0; /* quitar padding que desplazaba layout */
+  }
+
+  form {
+    max-width: 520px;
+    width: 100%; /* ocupar todo el ancho disponible del contenedor centrado */
+    padding: 22px;
+    margin: 0 auto;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
+
+/* Opcional: pantalla muy grande, mantener centrado */
+@media (min-width: 1200px) {
+  .container {
+    padding: 100px 24px;
+  }
 }

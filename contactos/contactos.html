@@ -26,16 +26,19 @@
       </div>
 
       <form id="contactForm">
-        <input type="text" name="nombre" placeholder="Nombre" required />
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Ej: Juan Pérez" required />
+        <label for="email">Correo electrónico</label>
         <input
           type="email"
           name="email"
-          placeholder="Correo electrónico"
+          placeholder="example@gmail.com"
           required
         />
+        <label for="mensaje">Mensaje</label>
         <textarea
           name="mensaje"
-          placeholder="Mensaje"
+          placeholder="Escribe tu mensaje aquí..."
           rows="5"
           required
         ></textarea>

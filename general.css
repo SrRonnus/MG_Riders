@@ -5,6 +5,9 @@
   margin: 0;
   padding: auto;
 }
+hr {
+  max-width: 8%;
+}
 body{
   background: linear-gradient(135deg, #111 60%, #b30000 100%);
   color: #fff;
