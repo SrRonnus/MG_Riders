@@ -29,7 +29,7 @@ hr {
 }
 #catalogo {
   border-radius: 40px;
-  background: rgba(235, 150, 39, 0.904);
+  background: rgb(241, 255, 52);
   padding: 0.5rem 1rem;
   color: black;
   transition: background 0.3s;
@@ -38,12 +38,13 @@ hr {
   background: rgba(255, 255, 255, 0.37);
 }
 .background-bike-hero {
+  color: black;
   background: url('images/bike-nothings.png') no-repeat center center/cover;
-  height: 70vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .header {
@@ -57,6 +58,11 @@ hr {
 .logo{
   font-size: 1.1rem;
   font-weight: semi-bold;
+}
+.logo img {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
 }
 .logo span {
   color: red;
