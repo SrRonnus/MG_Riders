@@ -1,3 +1,57 @@
-<h1>Teacher, seguro esta viendo los progresos que se hacen?<br>
-necesito que me  mande captura de pantalla para corroborar <br>
-de que si esta viendo los pequeños cambios</h1>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catálogo</title>
+        <link rel="stylesheet" href="productos.css" />
+    </head>
+
+    <body>
+        <header class="catalog-header">
+            <a class="back" href="../index.html">&larr; Volver</a>
+            <h1>Catálogo MG Riders</h1>
+        </header>
+
+        <main class="catalog-main">
+            <section class="controls">
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="Buscar producto, referencia o precio..."
+                    aria-label="Buscar productos"
+                />
+
+                <select id="sort">
+                    <option value="default">Orden: Relevancia</option>
+                    <option value="price-asc">Precio: menor a mayor</option>
+                    <option value="price-desc">Precio: mayor a menor</option>
+                </select>
+            </section>
+
+            <section id="catalog" class="catalog-grid" aria-live="polite">
+                <!-- Productos se cargarán dinámicamente -->
+            </section>
+        </main>
+
+        <template id="card-template">
+            <article class="card">
+                <div class="img-wrap">
+                    <img loading="lazy" alt="Producto" />
+                </div>
+
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <p class="card-desc"></p>
+
+                    <div class="card-meta">
+                        <span class="price"></span>
+                        <a class="ver-btn" target="_blank" rel="noopener">Ver</a>
+                    </div>
+                </div>
+            </article>
+        </template>
+
+        <script src="productos.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,702 @@
+[
+    {
+        "id": "p001",
+        "title": "Filtro de aire compatible Yamaha",
+        "price": "12.50",
+        "image": "filtro_aire_yamaha.jpg",
+        "description": "Filtro de aire de alto flujo para modelos Yamaha 125-150cc."
+    },
+    {
+        "id": "p002",
+        "title": "Pastillas de freno delanteras",
+        "price": "18.00",
+        "image": "pastillas_freno_del.jpg",
+        "description": "Juego de pastillas delanteras semimetálicas, larga duración."
+    },
+    {
+        "id": "p003",
+        "title": "Candado de disco anti-robo",
+        "price": "22.00",
+        "image": "candado_disco.jpg",
+        "description": "Candado robusto para disco de freno con llave y cable."
+    },
+    {
+        "id": "p004",
+        "title": "Bujía NGK estándar",
+        "price": "4.50",
+        "image": "bujia_ngk.jpg",
+        "description": "Bujía NGK de reemplazo para múltiples modelos."
+    },
+    {
+        "id": "p005",
+        "title": "Aceite semi-sintético 10W-40 1L",
+        "price": "9.75",
+        "image": "aceite_10w40.jpg",
+        "description": "Aceite de motor para motos de uso diario y carretera."
+    },
+    {
+        "id": "p006",
+        "title": "Espejo retrovisor universal",
+        "price": "7.20",
+        "image": "espejo_universal.jpg",
+        "description": "Par de espejos retrovisores con adaptadores universales."
+    },
+    {
+        "id": "p007",
+        "title": "Producto genérico 7",
+        "price": "9.99",
+        "image": "product_007.jpg",
+        "description": "Descripción genérica del producto 7."
+    },
+    {
+        "id": "p008",
+        "title": "Producto genérico 8",
+        "price": "9.99",
+        "image": "product_008.jpg",
+        "description": "Descripción genérica del producto 8."
+    },
+    {
+        "id": "p009",
+        "title": "Producto genérico 9",
+        "price": "9.99",
+        "image": "product_009.jpg",
+        "description": "Descripción genérica del producto 9."
+    },
+    {
+        "id": "p010",
+        "title": "Producto genérico 10",
+        "price": "9.99",
+        "image": "product_010.jpg",
+        "description": "Descripción genérica del producto 10."
+    },
+    {
+        "id": "p011",
+        "title": "Producto genérico 11",
+        "price": "9.99",
+        "image": "product_011.jpg",
+        "description": "Descripción genérica del producto 11."
+    },
+    {
+        "id": "p012",
+        "title": "Producto genérico 12",
+        "price": "9.99",
+        "image": "product_012.jpg",
+        "description": "Descripción genérica del producto 12."
+    },
+    {
+        "id": "p013",
+        "title": "Producto genérico 13",
+        "price": "9.99",
+        "image": "product_013.jpg",
+        "description": "Descripción genérica del producto 13."
+    },
+    {
+        "id": "p014",
+        "title": "Producto genérico 14",
+        "price": "9.99",
+        "image": "product_014.jpg",
+        "description": "Descripción genérica del producto 14."
+    },
+    {
+        "id": "p015",
+        "title": "Producto genérico 15",
+        "price": "9.99",
+        "image": "product_015.jpg",
+        "description": "Descripción genérica del producto 15."
+    },
+    {
+        "id": "p016",
+        "title": "Producto genérico 16",
+        "price": "9.99",
+        "image": "product_016.jpg",
+        "description": "Descripción genérica del producto 16."
+    },
+    {
+        "id": "p017",
+        "title": "Producto genérico 17",
+        "price": "9.99",
+        "image": "product_017.jpg",
+        "description": "Descripción genérica del producto 17."
+    },
+    {
+        "id": "p018",
+        "title": "Producto genérico 18",
+        "price": "9.99",
+        "image": "product_018.jpg",
+        "description": "Descripción genérica del producto 18."
+    },
+    {
+        "id": "p019",
+        "title": "Producto genérico 19",
+        "price": "9.99",
+        "image": "product_019.jpg",
+        "description": "Descripción genérica del producto 19."
+    },
+    {
+        "id": "p020",
+        "title": "Producto genérico 20",
+        "price": "9.99",
+        "image": "product_020.jpg",
+        "description": "Descripción genérica del producto 20."
+    },
+    {
+        "id": "p021",
+        "title": "Producto genérico 21",
+        "price": "9.99",
+        "image": "product_021.jpg",
+        "description": "Descripción genérica del producto 21."
+    },
+    {
+        "id": "p022",
+        "title": "Producto genérico 22",
+        "price": "9.99",
+        "image": "product_022.jpg",
+        "description": "Descripción genérica del producto 22."
+    },
+    {
+        "id": "p023",
+        "title": "Producto genérico 23",
+        "price": "9.99",
+        "image": "product_023.jpg",
+        "description": "Descripción genérica del producto 23."
+    },
+    {
+        "id": "p024",
+        "title": "Producto genérico 24",
+        "price": "9.99",
+        "image": "product_024.jpg",
+        "description": "Descripción genérica del producto 24."
+    },
+    {
+        "id": "p025",
+        "title": "Producto genérico 25",
+        "price": "9.99",
+        "image": "product_025.jpg",
+        "description": "Descripción genérica del producto 25."
+    },
+    {
+        "id": "p026",
+        "title": "Producto genérico 26",
+        "price": "9.99",
+        "image": "product_026.jpg",
+        "description": "Descripción genérica del producto 26."
+    },
+    {
+        "id": "p027",
+        "title": "Producto genérico 27",
+        "price": "9.99",
+        "image": "product_027.jpg",
+        "description": "Descripción genérica del producto 27."
+    },
+    {
+        "id": "p028",
+        "title": "Producto genérico 28",
+        "price": "9.99",
+        "image": "product_028.jpg",
+        "description": "Descripción genérica del producto 28."
+    },
+    {
+        "id": "p029",
+        "title": "Producto genérico 29",
+        "price": "9.99",
+        "image": "product_029.jpg",
+        "description": "Descripción genérica del producto 29."
+    },
+    {
+        "id": "p030",
+        "title": "Producto genérico 30",
+        "price": "9.99",
+        "image": "product_030.jpg",
+        "description": "Descripción genérica del producto 30."
+    },
+    {
+        "id": "p031",
+        "title": "Producto genérico 31",
+        "price": "9.99",
+        "image": "product_031.jpg",
+        "description": "Descripción genérica del producto 31."
+    },
+    {
+        "id": "p032",
+        "title": "Producto genérico 32",
+        "price": "9.99",
+        "image": "product_032.jpg",
+        "description": "Descripción genérica del producto 32."
+    },
+    {
+        "id": "p033",
+        "title": "Producto genérico 33",
+        "price": "9.99",
+        "image": "product_033.jpg",
+        "description": "Descripción genérica del producto 33."
+    },
+    {
+        "id": "p034",
+        "title": "Producto genérico 34",
+        "price": "9.99",
+        "image": "product_034.jpg",
+        "description": "Descripción genérica del producto 34."
+    },
+    {
+        "id": "p035",
+        "title": "Producto genérico 35",
+        "price": "9.99",
+        "image": "product_035.jpg",
+        "description": "Descripción genérica del producto 35."
+    },
+    {
+        "id": "p036",
+        "title": "Producto genérico 36",
+        "price": "9.99",
+        "image": "product_036.jpg",
+        "description": "Descripción genérica del producto 36."
+    },
+    {
+        "id": "p037",
+        "title": "Producto genérico 37",
+        "price": "9.99",
+        "image": "product_037.jpg",
+        "description": "Descripción genérica del producto 37."
+    },
+    {
+        "id": "p038",
+        "title": "Producto genérico 38",
+        "price": "9.99",
+        "image": "product_038.jpg",
+        "description": "Descripción genérica del producto 38."
+    },
+    {
+        "id": "p039",
+        "title": "Producto genérico 39",
+        "price": "9.99",
+        "image": "product_039.jpg",
+        "description": "Descripción genérica del producto 39."
+    },
+    {
+        "id": "p040",
+        "title": "Producto genérico 40",
+        "price": "9.99",
+        "image": "product_040.jpg",
+        "description": "Descripción genérica del producto 40."
+    },
+    {
+        "id": "p041",
+        "title": "Producto genérico 41",
+        "price": "9.99",
+        "image": "product_041.jpg",
+        "description": "Descripción genérica del producto 41."
+    },
+    {
+        "id": "p042",
+        "title": "Producto genérico 42",
+        "price": "9.99",
+        "image": "product_042.jpg",
+        "description": "Descripción genérica del producto 42."
+    },
+    {
+        "id": "p043",
+        "title": "Producto genérico 43",
+        "price": "9.99",
+        "image": "product_043.jpg",
+        "description": "Descripción genérica del producto 43."
+    },
+    {
+        "id": "p044",
+        "title": "Producto genérico 44",
+        "price": "9.99",
+        "image": "product_044.jpg",
+        "description": "Descripción genérica del producto 44."
+    },
+    {
+        "id": "p045",
+        "title": "Producto genérico 45",
+        "price": "9.99",
+        "image": "product_045.jpg",
+        "description": "Descripción genérica del producto 45."
+    },
+    {
+        "id": "p046",
+        "title": "Producto genérico 46",
+        "price": "9.99",
+        "image": "product_046.jpg",
+        "description": "Descripción genérica del producto 46."
+    },
+    {
+        "id": "p047",
+        "title": "Producto genérico 47",
+        "price": "9.99",
+        "image": "product_047.jpg",
+        "description": "Descripción genérica del producto 47."
+    },
+    {
+        "id": "p048",
+        "title": "Producto genérico 48",
+        "price": "9.99",
+        "image": "product_048.jpg",
+        "description": "Descripción genérica del producto 48."
+    },
+    {
+        "id": "p049",
+        "title": "Producto genérico 49",
+        "price": "9.99",
+        "image": "product_049.jpg",
+        "description": "Descripción genérica del producto 49."
+    },
+    {
+        "id": "p050",
+        "title": "Producto genérico 50",
+        "price": "9.99",
+        "image": "product_050.jpg",
+        "description": "Descripción genérica del producto 50."
+    },
+    {
+        "id": "p051",
+        "title": "Producto genérico 51",
+        "price": "9.99",
+        "image": "product_051.jpg",
+        "description": "Descripción genérica del producto 51."
+    },
+    {
+        "id": "p052",
+        "title": "Producto genérico 52",
+        "price": "9.99",
+        "image": "product_052.jpg",
+        "description": "Descripción genérica del producto 52."
+    },
+    {
+        "id": "p053",
+        "title": "Producto genérico 53",
+        "price": "9.99",
+        "image": "product_053.jpg",
+        "description": "Descripción genérica del producto 53."
+    },
+    {
+        "id": "p054",
+        "title": "Producto genérico 54",
+        "price": "9.99",
+        "image": "product_054.jpg",
+        "description": "Descripción genérica del producto 54."
+    },
+    {
+        "id": "p055",
+        "title": "Producto genérico 55",
+        "price": "9.99",
+        "image": "product_055.jpg",
+        "description": "Descripción genérica del producto 55."
+    },
+    {
+        "id": "p056",
+        "title": "Producto genérico 56",
+        "price": "9.99",
+        "image": "product_056.jpg",
+        "description": "Descripción genérica del producto 56."
+    },
+    {
+        "id": "p057",
+        "title": "Producto genérico 57",
+        "price": "9.99",
+        "image": "product_057.jpg",
+        "description": "Descripción genérica del producto 57."
+    },
+    {
+        "id": "p058",
+        "title": "Producto genérico 58",
+        "price": "9.99",
+        "image": "product_058.jpg",
+        "description": "Descripción genérica del producto 58."
+    },
+    {
+        "id": "p059",
+        "title": "Producto genérico 59",
+        "price": "9.99",
+        "image": "product_059.jpg",
+        "description": "Descripción genérica del producto 59."
+    },
+    {
+        "id": "p060",
+        "title": "Producto genérico 60",
+        "price": "9.99",
+        "image": "product_060.jpg",
+        "description": "Descripción genérica del producto 60."
+    },
+    {
+        "id": "p061",
+        "title": "Producto genérico 61",
+        "price": "9.99",
+        "image": "product_061.jpg",
+        "description": "Descripción genérica del producto 61."
+    },
+    {
+        "id": "p062",
+        "title": "Producto genérico 62",
+        "price": "9.99",
+        "image": "product_062.jpg",
+        "description": "Descripción genérica del producto 62."
+    },
+    {
+        "id": "p063",
+        "title": "Producto genérico 63",
+        "price": "9.99",
+        "image": "product_063.jpg",
+        "description": "Descripción genérica del producto 63."
+    },
+    {
+        "id": "p064",
+        "title": "Producto genérico 64",
+        "price": "9.99",
+        "image": "product_064.jpg",
+        "description": "Descripción genérica del producto 64."
+    },
+    {
+        "id": "p065",
+        "title": "Producto genérico 65",
+        "price": "9.99",
+        "image": "product_065.jpg",
+        "description": "Descripción genérica del producto 65."
+    },
+    {
+        "id": "p066",
+        "title": "Producto genérico 66",
+        "price": "9.99",
+        "image": "product_066.jpg",
+        "description": "Descripción genérica del producto 66."
+    },
+    {
+        "id": "p067",
+        "title": "Producto genérico 67",
+        "price": "9.99",
+        "image": "product_067.jpg",
+        "description": "Descripción genérica del producto 67."
+    },
+    {
+        "id": "p068",
+        "title": "Producto genérico 68",
+        "price": "9.99",
+        "image": "product_068.jpg",
+        "description": "Descripción genérica del producto 68."
+    },
+    {
+        "id": "p069",
+        "title": "Producto genérico 69",
+        "price": "9.99",
+        "image": "product_069.jpg",
+        "description": "Descripción genérica del producto 69."
+    },
+    {
+        "id": "p070",
+        "title": "Producto genérico 70",
+        "price": "9.99",
+        "image": "product_070.jpg",
+        "description": "Descripción genérica del producto 70."
+    },
+    {
+        "id": "p071",
+        "title": "Producto genérico 71",
+        "price": "9.99",
+        "image": "product_071.jpg",
+        "description": "Descripción genérica del producto 71."
+    },
+    {
+        "id": "p072",
+        "title": "Producto genérico 72",
+        "price": "9.99",
+        "image": "product_072.jpg",
+        "description": "Descripción genérica del producto 72."
+    },
+    {
+        "id": "p073",
+        "title": "Producto genérico 73",
+        "price": "9.99",
+        "image": "product_073.jpg",
+        "description": "Descripción genérica del producto 73."
+    },
+    {
+        "id": "p074",
+        "title": "Producto genérico 74",
+        "price": "9.99",
+        "image": "product_074.jpg",
+        "description": "Descripción genérica del producto 74."
+    },
+    {
+        "id": "p075",
+        "title": "Producto genérico 75",
+        "price": "9.99",
+        "image": "product_075.jpg",
+        "description": "Descripción genérica del producto 75."
+    },
+    {
+        "id": "p076",
+        "title": "Producto genérico 76",
+        "price": "9.99",
+        "image": "product_076.jpg",
+        "description": "Descripción genérica del producto 76."
+    },
+    {
+        "id": "p077",
+        "title": "Producto genérico 77",
+        "price": "9.99",
+        "image": "product_077.jpg",
+        "description": "Descripción genérica del producto 77."
+    },
+    {
+        "id": "p078",
+        "title": "Producto genérico 78",
+        "price": "9.99",
+        "image": "product_078.jpg",
+        "description": "Descripción genérica del producto 78."
+    },
+    {
+        "id": "p079",
+        "title": "Producto genérico 79",
+        "price": "9.99",
+        "image": "product_079.jpg",
+        "description": "Descripción genérica del producto 79."
+    },
+    {
+        "id": "p080",
+        "title": "Producto genérico 80",
+        "price": "9.99",
+        "image": "product_080.jpg",
+        "description": "Descripción genérica del producto 80."
+    },
+    {
+        "id": "p081",
+        "title": "Producto genérico 81",
+        "price": "9.99",
+        "image": "product_081.jpg",
+        "description": "Descripción genérica del producto 81."
+    },
+    {
+        "id": "p082",
+        "title": "Producto genérico 82",
+        "price": "9.99",
+        "image": "product_082.jpg",
+        "description": "Descripción genérica del producto 82."
+    },
+    {
+        "id": "p083",
+        "title": "Producto genérico 83",
+        "price": "9.99",
+        "image": "product_083.jpg",
+        "description": "Descripción genérica del producto 83."
+    },
+    {
+        "id": "p084",
+        "title": "Producto genérico 84",
+        "price": "9.99",
+        "image": "product_084.jpg",
+        "description": "Descripción genérica del producto 84."
+    },
+    {
+        "id": "p085",
+        "title": "Producto genérico 85",
+        "price": "9.99",
+        "image": "product_085.jpg",
+        "description": "Descripción genérica del producto 85."
+    },
+    {
+        "id": "p086",
+        "title": "Producto genérico 86",
+        "price": "9.99",
+        "image": "product_086.jpg",
+        "description": "Descripción genérica del producto 86."
+    },
+    {
+        "id": "p087",
+        "title": "Producto genérico 87",
+        "price": "9.99",
+        "image": "product_087.jpg",
+        "description": "Descripción genérica del producto 87."
+    },
+    {
+        "id": "p088",
+        "title": "Producto genérico 88",
+        "price": "9.99",
+        "image": "product_088.jpg",
+        "description": "Descripción genérica del producto 88."
+    },
+    {
+        "id": "p089",
+        "title": "Producto genérico 89",
+        "price": "9.99",
+        "image": "product_089.jpg",
+        "description": "Descripción genérica del producto 89."
+    },
+    {
+        "id": "p090",
+        "title": "Producto genérico 90",
+        "price": "9.99",
+        "image": "product_090.jpg",
+        "description": "Descripción genérica del producto 90."
+    },
+    {
+        "id": "p091",
+        "title": "Producto genérico 91",
+        "price": "9.99",
+        "image": "product_091.jpg",
+        "description": "Descripción genérica del producto 91."
+    },
+    {
+        "id": "p092",
+        "title": "Producto genérico 92",
+        "price": "9.99",
+        "image": "product_092.jpg",
+        "description": "Descripción genérica del producto 92."
+    },
+    {
+        "id": "p093",
+        "title": "Producto genérico 93",
+        "price": "9.99",
+        "image": "product_093.jpg",
+        "description": "Descripción genérica del producto 93."
+    },
+    {
+        "id": "p094",
+        "title": "Producto genérico 94",
+        "price": "9.99",
+        "image": "product_094.jpg",
+        "description": "Descripción genérica del producto 94."
+    },
+    {
+        "id": "p095",
+        "title": "Producto genérico 95",
+        "price": "9.99",
+        "image": "product_095.jpg",
+        "description": "Descripción genérica del producto 95."
+    },
+    {
+        "id": "p096",
+        "title": "Producto genérico 96",
+        "price": "9.99",
+        "image": "product_096.jpg",
+        "description": "Descripción genérica del producto 96."
+    },
+    {
+        "id": "p097",
+        "title": "Producto genérico 97",
+        "price": "9.99",
+        "image": "product_097.jpg",
+        "description": "Descripción genérica del producto 97."
+    },
+    {
+        "id": "p098",
+        "title": "Producto genérico 98",
+        "price": "9.99",
+        "image": "product_098.jpg",
+        "description": "Descripción genérica del producto 98."
+    },
+    {
+        "id": "p099",
+        "title": "Producto genérico 99",
+        "price": "9.99",
+        "image": "product_099.jpg",
+        "description": "Descripción genérica del producto 99."
+    },
+    {
+        "id": "p100",
+        "title": "Producto genérico 100",
+        "price": "9.99",
+        "image": "product_100.jpg",
+        "description": "Descripción genérica del producto 100."
+    }
+]
