@@ -5,19 +5,46 @@ const searchInput = document.getElementById('search');
 const sortSelect = document.getElementById('sort');
 
 // Cambia este número por el número real de la tienda (sin + ni espacios)
-const WHATSAPP_NUMBER = '593XXXXXXXXX';
+const WHATSAPP_NUMBER = '593984665854';
 
 // Directorio base para las imágenes del catálogo (solo cambiar aquí si mueves las imágenes)
 const IMAGE_DIR = '../images/images_catalogo/';
 
+// Paginación y lazy-load
+const PAGE_SIZE = 20; // cambia a 10 si prefieres
+let currentIndex = 0;
 let products = [];
+let observer = null;
+
+// (products declarado arriba ahora)
 
 async function loadCatalog() {
   try {
     const res = await fetch('../images/images_catalogo/images_catalogo.json');
     if (!res.ok) throw new Error('No se pudo cargar JSON');
     products = await res.json();
-    render(products);
+    currentIndex = 0;
+
+    // inicializar observer para lazy-loading de imágenes
+    if ('IntersectionObserver' in window) {
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            const src = img.dataset && img.dataset.src;
+            if (src) {
+              img.src = src;
+              img.removeAttribute('data-src');
+            }
+            observer.unobserve(img);
+          }
+        });
+      }, { rootMargin: '200px 0px' });
+    }
+
+    // crear el botón Cargar más
+    createLoadMore();
+    renderPage(products);
   } catch (err) {
     catalogEl.innerHTML = `<div class="empty">Error cargando catálogo. ${err.message}</div>`;
   }
@@ -31,7 +58,7 @@ function createCard(item) {
   const price = node.querySelector('.price');
   const btn = node.querySelector('.ver-btn');
 
-  // Construir ruta de imagen: si la propiedad es absoluta, usarla; si no, intentar thumbs, luego original.
+  // Construir ruta de imagen: si la propiedad es absoluta, usarla; si no, intentar thumbs (WebP), luego original.
   const imgProp = item.image || '';
 
   if (!imgProp) {
@@ -51,21 +78,29 @@ function createCard(item) {
       filename = parts.pop();
     }
 
-    const thumbPath = `${IMAGE_DIR}thumbs/${filename}`; // thumbnail preferida
+    const thumbPath = `${IMAGE_DIR}thumbs/${filename}`; // thumbnail preferida (esperamos .webp)
     const originalPath = `${IMAGE_DIR}${filename}`;
 
-    // Intentar thumbnail primero; si falla, intentar original; si falla, placeholder.
-    img.src = thumbPath;
+    // Inicialmente mostramos placeholder y deferimos la carga real usando data-src.
+    img.src = placeholderDataURI(item.title || item.id);
+    img.dataset.src = thumbPath;
     img.dataset.attempt = 'thumb';
+    img.loading = 'lazy';
+
     img.onerror = function () {
       if (this.dataset.attempt === 'thumb') {
         this.dataset.attempt = 'original';
+        // intentar original inmediatamente
         this.src = originalPath;
+        // asegurar que si falla otra vez se reemplace por placeholder
       } else if (this.dataset.attempt === 'original') {
         this.dataset.attempt = 'fallback';
         this.src = placeholderDataURI(item.title || item.id);
       }
     };
+
+    // observar para lazy-load
+    if (observer) observer.observe(img);
   }
 
   img.alt = item.title || 'Producto';
@@ -78,6 +113,47 @@ function createCard(item) {
   btn.textContent = item.link ? 'Ver' : 'Contactar';
 
   return node;
+}
+
+// Crear y controlar el botón "Cargar más"
+function createLoadMore() {
+  let wrap = document.getElementById('load-more-wrap');
+  if (!wrap) {
+    wrap = document.createElement('div');
+    wrap.id = 'load-more-wrap';
+    wrap.style.textAlign = 'center';
+    wrap.style.margin = '18px 0';
+    const btn = document.createElement('button');
+    btn.id = 'load-more';
+    btn.textContent = 'Cargar más';
+    btn.className = 'load-more-btn';
+    btn.addEventListener('click', () => {
+      renderPage(products);
+    });
+    wrap.appendChild(btn);
+    catalogEl.parentNode.insertBefore(wrap, catalogEl.nextSibling);
+  }
+}
+
+function renderPage(list) {
+  // Si se está filtrando (list diferente que products), no paginar
+  if (!list) list = products;
+  if (list !== products) {
+    render(list);
+    const wrap = document.getElementById('load-more-wrap');
+    if (wrap) wrap.style.display = 'none';
+    return;
+  }
+
+  const slice = list.slice(currentIndex, currentIndex + PAGE_SIZE);
+  if (currentIndex === 0) catalogEl.innerHTML = '';
+  const frag = document.createDocumentFragment();
+  slice.forEach((p) => frag.appendChild(createCard(p)));
+  catalogEl.appendChild(frag);
+  currentIndex += slice.length;
+
+  const wrap = document.getElementById('load-more-wrap');
+  if (wrap) wrap.style.display = currentIndex < list.length ? 'block' : 'none';
 }
 
 function buildContactLink(item) {
@@ -112,6 +188,7 @@ function render(list) {
     return;
   }
 
+  // render completo (usado por filtros)
   const frag = document.createDocumentFragment();
   list.forEach((p) => frag.appendChild(createCard(p)));
   catalogEl.appendChild(frag);
@@ -133,7 +210,13 @@ function applyFilters() {
   const order = sortSelect.value;
   if (order === 'price-asc') list.sort((a, b) => (parseFloat(a.price) || 0) - (parseFloat(b.price) || 0));
   if (order === 'price-desc') list.sort((a, b) => (parseFloat(b.price) || 0) - (parseFloat(a.price) || 0));
-  render(list);
+  // Si hay consulta, mostramos resultados completos sin paginación; si no, volvemos a paginar
+  if (q) {
+    render(list);
+  } else {
+    currentIndex = 0;
+    renderPage(products);
+  }
 }
 
 searchInput.addEventListener('input', () => {
