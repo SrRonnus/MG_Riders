@@ -88,7 +88,7 @@ body {
 
 .card:hover {
 	transform: translateY(-6px);
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 10px 30px rgba(170, 6, 6, 0.6);
 }
 
 .img-wrap {
@@ -159,7 +159,10 @@ body {
 	text-decoration: none;
 	font-size: 13px;
 }
-
+.ver-btn:hover {
+	background-color: #c70000;
+	color: #070707;
+}
 /* responsive */
 @media (max-width: 600px) {
 	.img-wrap {
@@ -179,5 +182,97 @@ body {
 	padding: 40px;
 	text-align: center;
 	color: var(--muted);
+}
+
+/* Modal de imagen grande */
+#image-modal {
+	position: fixed;
+	inset: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 1200;
+}
+#image-modal.open { display: flex; }
+#image-modal .modal-backdrop {
+	position: absolute; inset: 0; background: rgba(0,0,0,0.7);
+}
+#image-modal .modal-content {
+	position: relative;
+	z-index: 1201; 
+	max-width: 1000px; 
+	width: min(92%, 1000px);
+}
+#image-modal .modal-body {
+
+	display: flex; gap: 16px; 
+	align-items: center;
+	background: linear-gradient(180deg, var(--card), rgba(10,10,10,0.95));
+	padding: 14px; 
+	border-radius: 10px; 
+	border: 1px solid rgba(255,255,255,0.03);
+}
+#image-modal img { 
+
+	max-width: 54%; 
+	max-height: 70vh; 
+	object-fit: contain; 
+	display: block; 
+	border-radius: 6px;
+}
+#image-modal .modal-info { 
+
+	color: #eee; 
+	max-width: 46%;
+
+}
+
+#image-modal .modal-title { 
+
+	margin: 0 0 8px 0; 
+	font-size: 18px; 
+}
+
+#image-modal .modal-desc { 
+
+	margin: 0 0 12px 0; color: var(--muted);
+	font-size: 14px; 
+}
+
+#image-modal .modal-close { 
+
+	position: absolute; 
+	right: 8px; top: 8px; 
+	-index: 1300; 
+	background: transparent; 
+	border: none; 
+	color: #fff; 
+	font-size: 24px; 
+	cursor: pointer; 
+
+}
+
+@media (max-width: 700px) {
+	#image-modal .modal-body { flex-direction: column; }
+	#image-modal img { max-width: 100%; max-height: 50vh; }
+	#image-modal .modal-info { max-width: 100%; }
+}
+
+
+/* Desktop: centrar texto en la tarjeta modal */
+@media (min-width: 700px) {
+
+	#image-modal .modal-info {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#image-modal .modal-contact {
+		margin-top: 12px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 

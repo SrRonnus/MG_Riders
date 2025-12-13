@@ -112,6 +112,19 @@ function createCard(item) {
   btn.href = buildContactLink(item);
   btn.textContent = item.link ? 'Ver' : 'Contactar';
 
+  // Añadir clic en la tarjeta para abrir modal con la imagen grande
+  const cardEl = node.querySelector('.card');
+  const filename = (item.image || '').split('/').pop();
+  const fullPath = `${IMAGE_DIR}${filename}`;
+  if (cardEl) {
+    cardEl.style.cursor = 'pointer';
+    cardEl.addEventListener('click', (ev) => {
+      // Evitar que el botón de contacto provoque el modal
+      if (ev.target && (ev.target.closest('.ver-btn') || ev.target.tagName === 'A')) return;
+      showImageModal(fullPath, item);
+    });
+  }
+
   return node;
 }
 
@@ -229,3 +242,54 @@ sortSelect.addEventListener('change', () => {
 
 // Inicializar
 loadCatalog();
+
+/* ----------------- Modal de imagen grande ----------------- */
+let _modal = null;
+function initImageModal() {
+  if (_modal) return;
+  _modal = document.createElement('div');
+  _modal.id = 'image-modal';
+  _modal.innerHTML = `
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Cerrar">×</button>
+      <div class="modal-body">
+        <img src="" alt="Preview" />
+        <div class="modal-info">
+          <h3 class="modal-title"></h3>
+          <p class="modal-desc"></p>
+          <a class="modal-contact ver-btn" href="#">Contactar</a>
+        </div>
+      </div>
+    </div>`;
+  document.body.appendChild(_modal);
+
+  _modal.querySelector('.modal-close').addEventListener('click', hideImageModal);
+  _modal.querySelector('.modal-backdrop').addEventListener('click', hideImageModal);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') hideImageModal();
+  });
+}
+
+function showImageModal(src, item) {
+  initImageModal();
+  const img = _modal.querySelector('img');
+  const title = _modal.querySelector('.modal-title');
+  const desc = _modal.querySelector('.modal-desc');
+  const contact = _modal.querySelector('.modal-contact');
+  img.src = src;
+  img.alt = item.title || 'Producto';
+  title.textContent = item.title || '';
+  desc.textContent = item.description || '';
+  contact.href = buildContactLink(item);
+  _modal.classList.add('open');
+}
+
+function hideImageModal() {
+  if (!_modal) return;
+  _modal.classList.remove('open');
+  const img = _modal.querySelector('img');
+  if (img) img.src = '';
+}
+
+/* ---------------------------------------------------------- */
