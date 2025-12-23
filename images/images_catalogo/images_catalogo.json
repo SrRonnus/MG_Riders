@@ -36,14 +36,14 @@
     },
     {
         "id": "p006",
-        "title": "Espejo retrovisor universal",
+        "title": "",
         "price": "7.20",
         "image": "p006.webp",
-        "description": "Par de espejos retrovisores con adaptadores universales."
+        "description": ""
     },
     {
         "id": "p007",
-        "title": "Producto genérico 7",
+        "title": "Estribos posterior gp200/Ax4/En125/gn125/CG150",
         "price": "9.99",
         "image": "p007.webp",
         "description": "Descripción genérica del producto 7."
@@ -64,168 +64,168 @@
     },
     {
         "id": "p010",
-        "title": "Producto genérico 10",
+        "title": "Base carburador pulsar NS 200",
         "price": "9.99",
         "image": "p010.webp",
         "description": "Descripción genérica del producto 10."
     },
     {
         "id": "p011",
-        "title": "Producto genérico 11",
+        "title": "Base carburador SHINERAY XY250",
         "price": "9.99",
         "image": "p011.webp",
         "description": "Descripción genérica del producto 11."
     },
     {
         "id": "p012",
-        "title": "Producto genérico 12",
+        "title": "Base de carburador CG200 curvo",
         "price": "9.99",
         "image": "p012.webp",
         "description": "Descripción genérica del producto 12."
     },
     {
         "id": "p013",
-        "title": "Producto genérico 13",
+        "title": "Base de carburador CG200 recto",
         "price": "9.99",
         "image": "p013.webp",
         "description": "Descripción genérica del producto 13."
     },
     {
         "id": "p014",
-        "title": "Producto genérico 14",
+        "title": "Cable de acelerador pasolas chinas",
         "price": "9.99",
         "image": "p014.webp",
         "description": "Descripción genérica del producto 14."
     },
     {
         "id": "p015",
-        "title": "Producto genérico 15",
+        "title": "Base carburador recta con conector de valvula pair",
         "price": "9.99",
         "image": "p015.webp",
         "description": "Descripción genérica del producto 15."
     },
     {
         "id": "p016",
-        "title": "Producto genérico 16",
+        "title": "Cable de embrague Susuki ax4",
         "price": "9.99",
         "image": "p016.webp",
         "description": "Descripción genérica del producto 16."
     },
     {
         "id": "p017",
-        "title": "Producto genérico 17",
+        "title": "Cable acelerador Susuki En ax4",
         "price": "9.99",
         "image": "p017.webp",
         "description": "Descripción genérica del producto 17."
     },
     {
         "id": "p018",
-        "title": "Producto genérico 18",
+        "title": "Manija de freno GY200",
         "price": "9.99",
         "image": "p018.webp",
         "description": "Descripción genérica del producto 18."
     },
     {
         "id": "p019",
-        "title": "Producto genérico 19",
+        "title": "Manija de freno pulsar 220/180",
         "price": "9.99",
         "image": "p019.webp",
         "description": "Descripción genérica del producto 19."
     },
     {
         "id": "p020",
-        "title": "Producto genérico 20",
+        "title": "Cable de embrague cg150",
         "price": "9.99",
         "image": "p020.webp",
         "description": "Descripción genérica del producto 20."
     },
     {
         "id": "p021",
-        "title": "Producto genérico 21",
+        "title": "Manija de embrague GN",
         "price": "9.99",
         "image": "p021.webp",
         "description": "Descripción genérica del producto 21."
     },
     {
         "id": "p022",
-        "title": "Producto genérico 22",
+        "title": "Manija de freno GN",
         "price": "9.99",
         "image": "p022.webp",
         "description": "Descripción genérica del producto 22."
     },
     {
         "id": "p023",
-        "title": "Producto genérico 23",
+        "title": "Eje de cambios CG150 Gancho 200mm",
         "price": "9.99",
         "image": "p023.webp",
         "description": "Descripción genérica del producto 23."
     },
     {
         "id": "p024",
-        "title": "Producto genérico 24",
+        "title": "Manija de embrague pulsar 220/180",
         "price": "9.99",
         "image": "p024.webp",
         "description": "Descripción genérica del producto 24."
     },
     {
         "id": "p025",
-        "title": "Producto genérico 25",
+        "title": "Guias de cadenilla CB200/250 CR5/DY250/Pro5",
         "price": "9.99",
         "image": "p025.webp",
         "description": "Descripción genérica del producto 25."
     },
     {
         "id": "p026",
-        "title": "Producto genérico 26",
+        "title": "Estrella selector de cambios de 6 puntas",
         "price": "9.99",
         "image": "p026.webp",
         "description": "Descripción genérica del producto 26."
     },
     {
         "id": "p027",
-        "title": "Producto genérico 27",
+        "title": "Cadenilla de distribucion 3x4-100l",
         "price": "9.99",
         "image": "p027.webp",
         "description": "Descripción genérica del producto 27."
     },
     {
         "id": "p028",
-        "title": "Producto genérico 28",
+        "title": "Estrella selector de cambios 5 cambios",
         "price": "9.99",
         "image": "p028.webp",
         "description": "Descripción genérica del producto 28."
     },
     {
         "id": "p029",
-        "title": "Producto genérico 29",
+        "title": "Caja de cambios completa CG150",
         "price": "9.99",
         "image": "p029.webp",
         "description": "Descripción genérica del producto 29."
     },
     {
         "id": "p030",
-        "title": "Producto genérico 30",
+        "title": "Cadenilla de distribucion 3x4-104l TRACKER250, DY250 TEKKEN, FX250AK47, MOTORUNO M1R250",
         "price": "9.99",
         "image": "p030.webp",
         "description": "Descripción genérica del producto 30."
     },
     {
         "id": "p031",
-        "title": "Producto genérico 31",
+        "title": "Cadenilla 2x3-100l DAYTONA DY200WOLF, SUSUKI EN125, SUSUKI GSX150, TRAXX TX150GY2",
         "price": "9.99",
         "image": "p031.webp",
         "description": "Descripción genérica del producto 31."
     },
     {
         "id": "p032",
-        "title": "Producto genérico 32",
+        "title": "Cadenilla 3x4-102l TRACKER250, DY250TEKKEN, FX250AK47, CHIEFII, XY250GY6A, SKR250, TKCR5250",
         "price": "9.99",
         "image": "p032.webp",
         "description": "Descripción genérica del producto 32."
     },
     {
         "id": "p033",
-        "title": "Producto genérico 33",
+        "title": "Cadenilla de distribucion 25H-98L Susuki GN -EN 125/ Honda Cb1 125/ Pulsar180",
         "price": "9.99",
         "image": "p033.webp",
         "description": "Descripción genérica del producto 33."
