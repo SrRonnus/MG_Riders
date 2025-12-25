@@ -50,32 +50,160 @@
     </section>
   </div>
 
-  <!--<div class="map-container">
-    <h2>Nuestra Ubicación</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158.5813957900186!2d-78.4217887!3d-0.104764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58fd3bd6c9e4b%3A0x5b6d34616433b6da!2sMG%20RIDER%20MOTOS!5e0!3m2!1ses!2sec!4v1695400000000!5m2!1ses!2sec" 
-      width="100%" 
-      height="350" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-    <p class="direccion">Calle José Miguel Guarderas, PANA NORTE, 0 78.422008, Quito - Ecuador</p>
-  </div>-->
+  <!-- Pasarela de productos (desplazamiento continuo) -->
+  <section class="pasarela-section">
+    <h3>Disponemos de:</h3>
+    <div class="pasarela" id="productPasarela" aria-label="Pasarela de productos">
+      <div class="pasarela-track" id="pasarelaTrack" role="list"></div>
+    </div>
+  </section>
+
   <!-- https://wa.me/c/593984665854 (La c significa catalogo)pa no olvidarme JAJAJJAJAJ-->
+  
+  <!-- Sección Destacados -->
+  <section id="destacados" class="products-section">
+    <h3>Productos destacados</h3>
+    <p class="sub">Algunos de nuestros repuestos más buscados.</p>
+    <div id="productsGrid" class="products-grid">
+      <article class="card">
+        <img src="images/images_catalogo/p001.webp" alt="Mordaza delantera tundra 200">
+        <div class="card-body">
+          <h4>Mordaza delantera Tundra 200</h4>
+          <p class="price">Consulta precio</p>
+          <a href="nuestros_productos/productos.html" class="btn card-btn">Ver catálogo</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/images_catalogo/p010.webp" alt="Base carburador pulsar NS 200">
+        <div class="card-body">
+          <h4>Base carburador Pulsar NS200</h4>
+          <p class="price">Consulta precio</p>
+          <a href="nuestros_productos/productos.html" class="btn card-btn">Ver catálogo</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/images_catalogo/p036.webp" alt="Kit de reparación embrague CG">
+        <div class="card-body">
+          <h4>Kit reparación embrague CG</h4>
+          <p class="price">Consulta precio</p>
+          <a href="nuestros_productos/productos.html" class="btn card-btn">Ver catálogo</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sección Servicios -->
+  <section id="servicios" class="services">
+    <h3>Servicios y beneficios</h3>
+    <div class="services-grid">
+      <div class="service-item">
+        <i class="fas fa-shipping-fast fa-2x"></i>
+        <h4>Envíos rápidos</h4>
+        <p>Entregas a nivel nacional con seguimiento.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-clipboard-check fa-2x"></i>
+        <h4>Garantía y calidad</h4>
+        <p>Repuestos verificados — calidad garantizada.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-tools fa-2x"></i>
+        <h4>Asesoría técnica</h4>
+        <p>Soporte para encontrar el repuesto correcto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Taller y Mantenimiento -->
+  <section id="taller" class="taller">
+    <h3>Taller MG Riders</h3>
+    <p class="sub">Nuestro taller ofrece servicio completo de mantenimiento, diagnóstico y reparación para tu motocicleta.</p>
+    <div class="taller-grid">
+      <div class="taller-card">
+        <h4>Mantenimiento Preventivo</h4>
+        <p>Cambio de aceite, revisión de frenos, ajuste de cadena y chequeo general.</p>
+      </div>
+      <div class="taller-card">
+        <h4>Reparaciones</h4>
+        <p>Reparación de transmisión, sistema de frenos, suspensiones y motores.</p>
+      </div>
+      <div class="taller-card">
+        <h4>Diagnóstico Electrónico</h4>
+        <p>Lectura de códigos y test completo del sistema eléctrico.</p>
+      </div>
+    </div>
+
+    <div class="mantenimiento">
+      <h4>Planes de mantenimiento</h4>
+      <ul>
+        <li>Plan Básico: cambio de aceite y ajuste — ideal para uso urbano.</li>
+        <li>Plan Completo: revisión general + cambio de filtros y pastillas.</li>
+        <li>Plan Premium: revisión completa, afinamiento y prueba en ruta.</li>
+      </ul>
+      <p class="note">¿Quieres agendar una cita? <a href="https://wa.me/593984665854">Contáctanos por WhatsApp</a> y coordina tu visita.</p>
+    </div>
+  </section>
+
+  <!-- Sección Testimonios -->
+  <section id="testimonios" class="testimonials">
+    <h3>Clientes satisfechos</h3><br>
+    <div class="test-grid">
+      <div class="test-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Juan" class="avatar">
+        <p>"Excelente servicio, dejaron mi moto como nueva. Atención rápida y profesional."</p>
+        <span class="who">— Juan., Quito</span>
+      </div>
+      <div class="test-card">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="María" class="avatar">
+        <p>"Encontré la pieza que buscaba y me la instalaron al instante. Muy recomendado."</p>
+        <span class="who">— María., Guayaquil</span>
+      </div>
+      <div class="test-card">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Carlos" class="avatar">
+        <p>"Precios justos y asesoría técnica clara, volveré sin duda."</p>
+        <span class="who">— Carlos., Cuenca</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección FAQ -->
+  <section id="faq" class="faq">
+    <h3>Preguntas frecuentes</h3>
+    <div class="faq-item">
+      <button class="faq-q">¿Cómo agendo una cita?</button>
+      <div class="faq-a">Puedes agendar por WhatsApp al número o visitarnos en tienda. También aceptamos llamadas y mensajes en redes.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">¿Ofrecen garantía en las reparaciones?</button>
+      <div class="faq-a">Sí, nuestras reparaciones cuentan con garantía según el servicio y las piezas utilizadas.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">¿Venden e instalan repuestos?</button>
+      <div class="faq-a">Sí, tenemos repuestos en stock y nuestro taller puede realizar la instalación.</div>
+    </div>
+  </section>
+
+  <!-- Botón volver arriba -->
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
+
   <div class="boton-wa">
     <a href="https://wa.me/593984665854" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Contáctanos</a>
   </div>
 
   <footer>
-    <h4>Síguenos en nuestras redes sociales:</h4>
-    <div class="socials">
-      <a href="https://youtube.com/" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube</a> 
-      <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a> 
-      <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a> 
-      <a href="http://tiktok.com/@mgridersmotolujos" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i> TikTok</a>
+
+    <div class="footer-bottom">
+      <h4>Síguenos en nuestras redes sociales:</h4>
+      <div class="socials">
+        <a href="https://youtube.com/" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube</a> 
+        <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a> 
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a> 
+        <a href="http://tiktok.com/@mgridersmotolujos" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i> TikTok</a>
+      </div>
+      <p>&copy; 2025 MG Riders. Todos los derechos reservados.</p>
     </div>
-    <p>&copy; 2025 MG Riders. Todos los derechos reservados.</p>
   </footer>
   <script src="main.js"></script>
 </body>
