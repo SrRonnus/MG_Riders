@@ -106,7 +106,7 @@ function createCard(item) {
   img.alt = item.title || 'Producto';
   title.textContent = item.title || 'Sin título';
   desc.textContent = item.description || '';
-  price.textContent = item.price ? `USD ${item.price}` : '';
+  price.textContent = 'Precio a consultar';
 
   // Construir enlace de contacto: usar `item.link` si existe, si no generar uno hacia WhatsApp
   btn.href = buildContactLink(item);
